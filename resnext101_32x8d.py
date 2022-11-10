@@ -207,7 +207,7 @@ data_transform = {
                                transforms.ToTensor(),
                                transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])}
 
-image_path =  "../../data/AAAA"
+image_path =  "./traindata/data"
 
 train_dataset = datasets.ImageFolder(root=os.path.join(image_path, "train"),
                                      transform=data_transform["train"])
